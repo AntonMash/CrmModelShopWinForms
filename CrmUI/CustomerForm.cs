@@ -22,7 +22,7 @@ namespace CrmUI
 
         public CustomerForm(Customer customer):this()
         {
-            Customer = customer;
+            Customer = customer ?? new Customer();
             textBox1.Text = customer.Name;
         }
         private void CustomerForm_Load(object sender, EventArgs e)
@@ -32,9 +32,9 @@ namespace CrmUI
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            var c = Customer ?? new Customer();
+            Customer = Customer ?? new Customer();
 
-            c.Name = textBox1.Text;
+            Customer.Name = textBox1.Text;
            
             Close();
         }
