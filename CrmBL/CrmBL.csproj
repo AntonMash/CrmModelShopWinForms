@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201910091434340_InitialCreate.designer.cs">
       <DependentUpon>201910091434340_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910231323406_InitialCreate1.cs" />
+    <Compile Include="Migrations\201910231323406_InitialCreate1.designer.cs">
+      <DependentUpon>201910231323406_InitialCreate1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cart.cs" />
     <Compile Include="Model\CashDesk.cs" />
@@ -81,6 +85,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201910091434340_InitialCreate.resx">
       <DependentUpon>201910091434340_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910231323406_InitialCreate1.resx">
+      <DependentUpon>201910231323406_InitialCreate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

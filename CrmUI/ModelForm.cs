@@ -56,7 +56,7 @@ namespace CrmUI
 
         private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
-            model.CustomerSpeed = (int)numericUpDown2.Value;
+            model.CashDeskSpeed = (int)numericUpDown2.Value;
         }
 
         private void label2_Click(object sender, EventArgs e)

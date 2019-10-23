@@ -55,6 +55,8 @@ namespace CrmUI
 
         private void CashDesk_CheckClosed(object sender, Check e)
         {
+
+            
             // как обновляться в том же потоке
             Price.Invoke((Action)delegate 
             {

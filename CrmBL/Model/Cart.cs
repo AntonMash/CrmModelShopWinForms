@@ -18,6 +18,8 @@ namespace CrmBL.Model
         public Customer Customer { get; set; }
 
         public  Dictionary<Product, int> Products { get; set; }
+        public decimal Price => GetAll().Sum(p => p.Price);
+
 
         public void Add(Product product)
         {
